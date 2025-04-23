@@ -11,11 +11,11 @@ class Pet:
     def eat(self):
         self.hunger = min(0, self.hunger + 3)
         self.happiness = max(10, self.happiness + 1)
-        print(f"{self.name} eats the food!")
+        print(f"{self.name} eats food!")
 
     def sleep(self):
         self.energy = max(10, self.energy + 5)
-        print(f"{self.name} takes a nap and gains energy.")
+        print(f"{self.name} takes a nap!")
 
     def play(self):
         if self.energy >= 2:
@@ -24,7 +24,7 @@ class Pet:
             self.hunger = max(10, self.hunger - 1)
             print(f"{self.name} plays!")
         else:
-            print(f"{self.name} is too tired to play. Try letting them sleep first.")
+            print(f"{self.name} is too tired to play.")
 
     def get_status(self):
         print(f"Status of {self.name}:")
